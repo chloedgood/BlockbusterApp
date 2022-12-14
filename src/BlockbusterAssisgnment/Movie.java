@@ -2,28 +2,26 @@ package BlockbusterAssisgnment;
 import java.util.ArrayList;
 
 public abstract class Movie {
-	private String title;
-	public abstract double runTime();
+	
+	String title;
+	public int runTime;
 	public abstract void play();
 	ArrayList<String> scenes = new ArrayList<>();
 	
-		public String getTitle() {
-			return title;
-		}
+	
 		
 		public void setTitle(String title) {
 			this.title = title;
 		}
 	
 		public String printInfo() {
-			return "Movie title =" + getTitle() + runTime(); 
+			return "Movie title =" + title + runTime; 
 		}
-		public String printScenes() {
-			return "";
-		}
-		
-			
-		
+		public void printScenes() {
+			for(int i=0; i <scenes.size(); i++) {
+				System.out.println(i + ". " + scenes.get(i));
+			}
+		}	
 }
 
 
