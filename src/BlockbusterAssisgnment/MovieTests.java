@@ -62,12 +62,12 @@ class MovieTests {
 	        ArrayList<String> VHS = new ArrayList<>(Arrays.asList());
 
 	        VHS vhs1 = new VHS();
-	        vhs1.title = "Practical Magic";
+	        vhs1.title = "Lion King";
 	        vhs1.runTime = 130;
-	        vhs1.scenes.add("When the witch flies off the roof");
+	        vhs1.scenes.add("Simba becomes king of pride rock");
 	        vhs1.title ="A";
 
-	        Assert.assertEquals("A", vhs1.title);
+	      assertEquals("A", vhs1.title);
 	    }
 
 	    @Test
@@ -76,12 +76,12 @@ class MovieTests {
 	        ArrayList<String> VHS = new ArrayList<>(Arrays.asList());
 
 	        Movie vhs1 = new VHS();
-	        vhs1.title = "Practical Magic";
+	        vhs1.title = "Lion King";
 	        vhs1.runTime = 130;
-	        vhs1.scenes.add("When the witch flies off the roof");
+	        vhs1.scenes.add("Simba becomes king of pride rock");
 	        vhs1.runTime = 100;
 
-	       Assert.assertEquals(100, vhs1.runTime);
+	       assertEquals(100, vhs1.runTime);
 	    }
 
 	    @Test
@@ -90,12 +90,12 @@ class MovieTests {
 	        ArrayList<String> VHS = new ArrayList<>(Arrays.asList());
 
 	        VHS vhs1 = new VHS();
-	        vhs1.title = "Practical Magic";
+	        vhs1.title = "Lion King";
 	        vhs1.runTime = 130;
-	        vhs1.scenes.add("When the witch flies off the roof");
+	        vhs1.scenes.add("Simba becomes king of pride rock");
 	        vhs1.currentTime=0;
 
-	        Assert.assertEquals(0, vhs1.currentTime);
+	        assertEquals(0, vhs1.currentTime);
 	    }
 
 	    @Test
@@ -104,14 +104,14 @@ class MovieTests {
 	        ArrayList<String> TILLScenes = new ArrayList<>(Arrays.asList());
 
 	        VHS vhs1 = new VHS();
-	        vhs1.title = "Practical Magic";
+	        vhs1.title = "Lion King";
 	        vhs1.runTime = 130;
-	        vhs1.scenes.add("When the witch flies off the roof");
+	        vhs1.scenes.add("Simba becomes king of pride rock");
 	        vhs1.play();
 	        vhs1.play();
 	        vhs1.play();
 
-	        Assert.assertEquals(0, vhs1.currentTime);
+	        assertEquals(0, vhs1.currentTime);
 	    }
 
 	    @Test
@@ -120,13 +120,13 @@ class MovieTests {
 	        ArrayList<String> TILLScenes = new ArrayList<>(Arrays.asList());
 
 	        VHS vhs1 = new VHS();
-	        vhs1.title = "Practical Magic";
+	        vhs1.title = "Lion King";
 	        vhs1.runTime = 130;
-	        vhs1.scenes.add("When the witch flies off the roof");
+	        vhs1.scenes.add("Simba becomes king of pride rock");
 	        vhs1.rewind();
 
 
-	        Assert.assertEquals(0, vhs1.currentTime);
+	        assertEquals(0, vhs1.currentTime);
 	    }
 
 	    @Test
@@ -135,15 +135,15 @@ class MovieTests {
 	        ArrayList<String> TILLScenes = new ArrayList<>(Arrays.asList());
 
 	        VHS vhs1 = new VHS();
-	        vhs1.title = "Practical Magic";
+	        vhs1.title = "Lion King";
 	        vhs1.runTime = 130;
-	        vhs1.scenes.add("When the witch flies off the roof");
+	        vhs1.scenes.add("Simba becomes king of pride rock");
 	        vhs1.play();
 	        vhs1.play();
 	        vhs1.play();
 	        vhs1.play();
 
-	        Assert.assertEquals(0, vhs1.currentTime);
+	        assertEquals(0, vhs1.currentTime);
 	    }
 
 	
