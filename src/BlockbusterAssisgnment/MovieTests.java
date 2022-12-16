@@ -121,8 +121,8 @@ class MovieTests {
 
 	        VHS vhs1 = new VHS();
 	        vhs1.title = "Lion King";
-	        vhs1.runTime = 130;
 	        vhs1.scenes.add("Simba becomes king of pride rock");
+	        vhs1.play(); //increments current time to 1
 	        vhs1.rewind();
 
 

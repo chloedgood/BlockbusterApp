@@ -8,7 +8,9 @@ public abstract class Movie {
 	public abstract void play();
 	ArrayList<String> scenes = new ArrayList<>();
 	
-	
+	public String getTitle() {
+		return title;
+	}
 		
 		public void setTitle(String title) {
 			this.title = title;
@@ -21,7 +23,9 @@ public abstract class Movie {
 			for(int i=0; i <scenes.size(); i++) {
 				System.out.println(i + ". " + scenes.get(i));
 			}
-		}	
+		}
+
+		
 }
 
 

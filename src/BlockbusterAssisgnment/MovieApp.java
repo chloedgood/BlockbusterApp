@@ -1,6 +1,7 @@
 package BlockbusterAssisgnment;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class MovieApp {
 	public static void main (String[] args) {
@@ -55,6 +56,26 @@ public class MovieApp {
         dvd3.scenes.add("Santa starts dating");
         dvd3.scenes.add("Santa falls for Charlie's principal");
         dvd3.scenes.add("Santa regains North Pole");
+        
+        
+        Scanner scan = new Scanner (System.in);
+        System.out.println("Welcome to GC Blockbuster!");
+        
+        for (Movie movie : movies) {
+        	System.out.println((movies.indexOf(movie) + 1) + ")" + movie.getTitle());
+        	}
+        System.out.println("Please select a movie:");
+        int userInput = scan.nextInt();
+        Movie movieSelection = movies.get(userInput - 1);
+        movieSelection.printInfo();
+        System.out.println("Do you want to watch this movie?");
+        char userResponse = scan.next().charAt(0);
+        if (userResponse == 'y' || userResponse =='Y') {
+        	movieSelection.play();
+        } else {
+        	System.out.println("Bye!");
+        }
+        	scan.close();
 		
 	}
 
